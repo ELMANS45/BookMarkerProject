@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+.main{
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+.cont{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+    cursor: pointer;
+}
+.cont::before{
+    content: "";
+    position: absolute;
+    width: 21%;
+    height: 20%;
+    background-color: gold;
+    z-index: -1;
+    top:80;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.cont:hover::before{
+    content: "";
+    width: 21%;
+    height: 40%;
+    background-color: gold;
+    z-index: -1;
+    top:60;
+}
+.bookmark-body h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.on{
+    color:  #3ca55c;
+}
+.two{
+   color:  #b5ac49;
+}
